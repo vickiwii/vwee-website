@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> -->
+    <link rel="stylesheet" type="text/css" href="css/vwee.css">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/vwee.js"> </script>
+    <title>Victoria Wee</title>
+</head>
+<script language="JavaScript">
+  var randnum = Math.random();
+  var inum = 9;
+  var rand1 = Math.round(randnum * (inum-1)) + 1;
+  images = new Array;
+  images[1] = "backpacking";
+  images[2] = "bw_studying_outside"
+  images[3] = "homeworking";
+  images[4] = "lake_lag";
+  images[5] = "offsite_baking";
+  images[6] = "swing";
+  images[7] = "tree_squat";
+  images[8] = "treehugging";
+  images[9] = "un_nairobi";
+  var image = "images/site/" + images[rand1];    
+  if ((screen.width < 480) || (screen.height < 480)) {
+    image += "_vert";
+  }   
+  image += ".jpg"; 
+</script>
+<body>
+  <script language="JavaScript">
+  document.write('<div class="bigImage" style="background-image: url(' + image + ');">')
+  </script>
+  <div id="navbar">
+      <ul class="list">
+        <li class="navItem"><a href="#about">\ about</a></li>
+        <li class="navItem"><a href="#projects">\ projects</a></li>
+        <li class="name"><a href="http://weevictoria.com" target=_self> &nbsp &nbsp Victoria Wee &nbsp &nbsp </a> </li>
+        <li class="navItem"><a href="#journal">\ journal</a></li>
+        <li class="navItem"><a href="#contact">\ contact</a></li>
+      </ul>
+  </div>  <!-- end navbar -->
+  <div style="top: 50%; left: 50%; position: absolute; width: 500; height: 600px;"></div>
+</body>
+</html>
